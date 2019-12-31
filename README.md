@@ -1,5 +1,12 @@
 # bangla-tts
-Multilingual (Bangla, English) real-time (in a GPU) speech synthesis API
+Multilingual (Bangla, English) real-time ([almost]in a GPU) speech synthesis API
+
+### Installation
+
+ * Install Anaconda
+ * `conda create -n new_virtual_env python==3.6.8`
+ * `conda activate new_virtual_env`
+ * `pip install -r requirements.txt`
 
 ### Usage
 
