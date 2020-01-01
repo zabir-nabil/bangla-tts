@@ -1,5 +1,5 @@
 # bangla-tts
-Multilingual (Bangla, English) real-time ([almost]in a GPU) speech synthesis API
+Multilingual (Bangla, English) real-time ([almost] in a GPU) speech synthesis library
 
 ### Installation
 
@@ -59,3 +59,5 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 - [ ] PyPI
 - [ ] More training
 - [ ] Light model
+- [ ] Publish the restful API
+- [ ] Publish the flask app
