@@ -41,9 +41,16 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
 ### Generated unseen speech samples
 
+
 [Sample 1 (আমার সোনার বাংলা আমি তোমাকে ভালোবাসি)](static/0_56258.wav)
+
+
 [Sample 2 (আমার নাম জাবির আল নাজি নাবিল)](static/1_283811.wav)
+
+
 [Sample 3 (I am still not a great speaker)](static/2_235924.wav)
+
+
 [Sample 4 (This is just a test)](static/3_256189.wav)
 
 
