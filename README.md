@@ -40,9 +40,7 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
 ### Generated speech samples
 
-<audio controls>
-  <source src="static/0_56258.wav" type="audio/wav">
-</audio>
+[Sample 1](static/0_56258.wav)
 
 
 ### To-dos
