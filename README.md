@@ -61,3 +61,8 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 - [ ] Light model
 - [ ] Publish the restful API
 - [ ] Publish the flask app
+
+
+### Usage granted only for educational purposes so far, ** GPL License **
+
+### If this repository helps you in anyway, show your love :heart: by putting a :star: on this project :v:
