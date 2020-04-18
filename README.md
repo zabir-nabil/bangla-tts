@@ -60,11 +60,12 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
  * Added a simple parser which will translate numeric keys to corresponding phonetic representation.
 
- Example: **১৯৯৭ সালের ২১ জানুয়ারী তে আমার জন্ম হয়** will be converted to **['ঊনিশশতসাতানব্বই সালের একুশ জানুয়ারী তে আমার জন্ম হয় ']** by the parser.
+ Example: *১৯৯৭ সালের ২১ জানুয়ারী তে আমার জন্ম হয়* will be converted to *['ঊনিশশ সাতানব্বই সালের একুশ জানুয়ারী তে আমার জন্ম হয় ']* by the parser.
 
- * Added a simple batch mechanism for translating longer sentences. As the attention window was fixed during training, the model previously failed to generate too long sentences. So, added a simple segmenting scheme to break the sentences into multiple parts, synthesize in batch, and finally merge them into single audio file.
+ * Added a simple batch mechanism for translating longer sentences. As the attention window was fixed during training, the model previously failed to generate long sentences (n_characters > 200). So, added a simple segmenting scheme to break the sentences into multiple parts, synthesize in batch, and finally merge them into a single audio file.
 
- * New examples:
+
+ **New examples:**
 
  [১৯৯৭ সালের ২১ জানুয়ারী তে আমার জন্ম হয়](birthdate.wav)
 
@@ -72,7 +73,7 @@ print(f"samplign rate: {gen_wavs[0][1]}")
  [আমার ফোন নাম্বার ০১৭১৩৩৫৩৪৩, তবে আমাকে সকাল ১০ টার আগে পাবেন না](phone_number.wav)
 
 
- [বাংলাদেশে গত ২৪ ঘণ্টায় ৩০৬ জন কোভিড-১৯ আক্রান্ত হয়েছেন। এই সময়ের মধ্যে মৃত্যু হয়েছে ৯ জনের। এ নিয়ে দেশটিতে মোট আক্রান্ত হলেন ২১৪৪। আর করোনা ভাইরাসে আক্রান্ত হয়ে মৃত্যু হয়েছে ৮৪ জনের। নতুন করে ৮ জনের পরীক্ষা করার পর করোনা ভাইরাসের উপস্থিতি পাওয়া যায়নি। এনিয়ে মোট ৬৬ জন সুস্থ হলেন।](covid19.wav)
+ [বাংলাদেশে গত ২৪ ঘণ্টায় ৩০৬ জন কোভিড-১৯ আক্রান্ত হয়েছেন। এই সময়ের মধ্যে মৃত্যু হয়েছে ৯ জনের। এ নিয়ে দেশটিতে মোট আক্রান্ত হলেন ২১৪৪। আর করোনা ভাইরাসে আক্রান্ত হয়ে মৃত্যু হয়েছে ৮৪ জনের। নতুন করে ৮ জনের পরীক্ষা করার পর করোনা ভাইরাসের উপস্থিতি পাওয়া যায়নি। এনিয়ে মোট ৬৬ জন সুস্থ হলেন।](covid19.wav) - BBC Bangla
 
 
 ### To-dos
@@ -84,9 +85,7 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 - [ ] Publish the flask app
 
 
-<<<<<<< HEAD
-=======
 > Usage granted only for educational/non-commerial purposes so far, ** GPL License **
 
 ### If this repository helps you in anyway, show your love :heart: by putting a :star: on this project :v:
->>>>>>> 49ea899b8d0e1cc060e22cf8552e067315a930ac
+
