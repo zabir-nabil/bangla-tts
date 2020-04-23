@@ -78,8 +78,9 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
 ### Wiki
 
-[Sourceforge project page](https://sourceforge.net/projects/bangla-tts/)
-[Wiki Homepage](https://sourceforge.net/p/bangla-tts/wiki/Home/)
+ * [Sourceforge project page](https://sourceforge.net/projects/bangla-tts/)
+
+ * [Wiki Homepage](https://sourceforge.net/p/bangla-tts/wiki/Home/)
 
 ### To-dos
 
