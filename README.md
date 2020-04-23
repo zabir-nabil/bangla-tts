@@ -76,6 +76,10 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
  [বাংলাদেশে গত ২৪ ঘণ্টায় ৩০৬ জন কোভিড-১৯ আক্রান্ত হয়েছেন। এই সময়ের মধ্যে মৃত্যু হয়েছে ৯ জনের। এ নিয়ে দেশটিতে মোট আক্রান্ত হলেন ২১৪৪। আর করোনা ভাইরাসে আক্রান্ত হয়ে মৃত্যু হয়েছে ৮৪ জনের। নতুন করে ৮ জনের পরীক্ষা করার পর করোনা ভাইরাসের উপস্থিতি পাওয়া যায়নি। এনিয়ে মোট ৬৬ জন সুস্থ হলেন।](covid19.wav) - BBC Bangla
 
+### Wiki
+
+[Sourceforge project page](https://sourceforge.net/projects/bangla-tts/)
+[Wiki Homepage](https://sourceforge.net/p/bangla-tts/wiki/Home/)
 
 ### To-dos
 
