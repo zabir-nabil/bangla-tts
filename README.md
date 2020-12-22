@@ -8,7 +8,7 @@ Multilingual (Bangla, English) real-time ([almost] in a GPU) speech synthesis li
  * `conda activate new_virtual_env`
  * `pip install -r requirements.txt`
  * While running for the first time, keep your internet connection on to download the weights of the speech synthesis models (>500 MB)
- * For fast inference, you must install tensorflow-gpu and have a NVidia GPU.
+ * For fast inference, you must install tensorflow-gpu and have a Nvidia GPU (CUDA).
 
 ### Usage
 
@@ -76,7 +76,15 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
  [বাংলাদেশে গত ২৪ ঘণ্টায় ৩০৬ জন কোভিড-১৯ আক্রান্ত হয়েছেন। এই সময়ের মধ্যে মৃত্যু হয়েছে ৯ জনের। এ নিয়ে দেশটিতে মোট আক্রান্ত হলেন ২১৪৪। আর করোনা ভাইরাসে আক্রান্ত হয়ে মৃত্যু হয়েছে ৮৪ জনের। নতুন করে ৮ জনের পরীক্ষা করার পর করোনা ভাইরাসের উপস্থিতি পাওয়া যায়নি। এনিয়ে মোট ৬৬ জন সুস্থ হলেন।](covid19.wav) - BBC Bangla
 
-### Wiki
+### Test Dataset
+
+I have designed a test dataset to compare new bangla TTS models with the benchmark model (bangla-tts).
+
+[Kathak dataset](test_dataset/kathak_bang.json)
+
+[Kathak dataset (multi-lingual, bangla + english)](test_dataset/kathak_bang_eng.json)
+
+### Wiki Pages
 
  * [Sourceforge project page](https://sourceforge.net/projects/bangla-tts/)
 
