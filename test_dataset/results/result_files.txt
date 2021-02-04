@@ -1,0 +1,4 @@
+The bakta test dataset results.
+Generated results are available at: 
+
+https://drive.google.com/drive/u/0/folders/1XCYVo4VuBbcZ99sVLEyO7Q5y2ltPBxLP

@@ -201,9 +201,8 @@ def generate(text_arr=[""], save_path = None):
             return file_paths
 
 
-from parser import process
-
-def generate_long(text="", numeric_translation = True): # slower, but can translate numeric details and longer sentences
+def generate_long(text="", save_path = "out.wav", numeric_translation = True): # slower, but can translate numeric details and longer sentences
+    import num_parser
     """
     params: text :: a str (long)
             numeric_translation :: phonetic translation will be performed before speech generation [slightly slower]
@@ -225,7 +224,7 @@ def generate_long(text="", numeric_translation = True): # slower, but can transl
         wget.download("https://gitlab.com/zabir-nabil/bangla_tts_weights/raw/master/model_gs_300k.data-00000-of-00001")
         shutil.move("model_gs_300k.data-00000-of-00001", "model2/model_gs_300k.data-00000-of-00001")
 
-    text_arr = process(text)
+    text_arr = num_parser.process(text)
     print(text_arr)
 
     # Load data
@@ -234,9 +233,11 @@ def generate_long(text="", numeric_translation = True): # slower, but can transl
 
 
     # Load graph
+    tf.reset_default_graph()
     g = Graph()
 
     with tf.Session() as sess:
+        
         sess.run(tf.global_variables_initializer())
 
         # Restore parameters
@@ -286,13 +287,13 @@ def generate_long(text="", numeric_translation = True): # slower, but can transl
 
         print(f'Total time taken {t_needed} secs.')
 
-        write("out.wav", sr, generated_wav)
+        write(save_path, sr, generated_wav)
 
 
 if __name__ == '__main__':
     # generate(["আমার সোনার বাংলা আমি তোমাকে ভালোবাসি", "আমার নাম জাবির আল নাজি নাবিল", "I am still not a great speaker", "This is just a test"], 'static')
-    #generate_long("বাংলাদেশে গত ২৪ ঘণ্টায় ৩০৬ জন কোভিড-১৯ আক্রান্ত হয়েছেন। এই সময়ের মধ্যে মৃত্যু হয়েছে ৯ জনের। এ নিয়ে দেশটিতে মোট আক্রান্ত হলেন ২১৪৪। আর করোনা ভাইরাসে আক্রান্ত হয়ে মৃত্যু হয়েছে ৮৪ জনের। নতুন করে ৮ জনের পরীক্ষা করার পর করোনা ভাইরাসের উপস্থিতি পাওয়া যায়নি। এনিয়ে মোট ৬৬ জন সুস্থ হলেন।")
-    #generate_long("আমার ফোন নাম্বার ০১৭১৩৩৫৩৪৩, তবে আমাকে সকাল ১০ টার আগে পাবেন না")
+    # generate_long("বাংলাদেশে গত ২৪ ঘণ্টায় ৩০৬ জন কোভিড-১৯ আক্রান্ত হয়েছেন। এই সময়ের মধ্যে মৃত্যু হয়েছে ৯ জনের। এ নিয়ে দেশটিতে মোট আক্রান্ত হলেন ২১৪৪। আর করোনা ভাইরাসে আক্রান্ত হয়ে মৃত্যু হয়েছে ৮৪ জনের। নতুন করে ৮ জনের পরীক্ষা করার পর করোনা ভাইরাসের উপস্থিতি পাওয়া যায়নি। এনিয়ে মোট ৬৬ জন সুস্থ হলেন।")
+    # generate_long("আমার ফোন নাম্বার ০১৭১৩৩৫৩৪৩, তবে আমাকে সকাল ১০ টার আগে পাবেন না")
     generate_long("১৯৯৭ সালের ২১ জানুয়ারী তে আমার জন্ম হয়")
     # sentence credit: BBC - Bangla
 
