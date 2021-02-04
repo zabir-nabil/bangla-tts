@@ -80,9 +80,9 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
 I have designed a test dataset to compare new bangla TTS models with the benchmark model (bangla-tts).
 
-[Kathak dataset](test_dataset/kathak_bang.json)
+[Bakta dataset](test_dataset/bakta_bang.json)
 
-[Kathak dataset (multi-lingual, bangla + english)](test_dataset/kathak_bang_eng.json)
+[Bakta dataset (multi-lingual, bangla + english)](test_dataset/bakta_bang_eng.json)
 
 ### Wiki Pages
 
@@ -97,6 +97,10 @@ I have designed a test dataset to compare new bangla TTS models with the benchma
 - [ ] Light model
 - [ ] Publish the restful API
 - [ ] Publish the flask app
+
+### Other TTS projects
+
+ * https://github.com/zabir-nabil/bangla-tts-hts
 
 
 > Usage granted only for educational/non-commerial purposes so far, ** GPL License **
