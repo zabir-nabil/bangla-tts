@@ -103,7 +103,5 @@ I have designed a test dataset to compare new bangla TTS models with the benchma
  * https://github.com/zabir-nabil/bangla-tts-hts
 
 
-> Usage granted only for educational/non-commerial purposes so far, ** GPL License **
-
 ### If this repository helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
