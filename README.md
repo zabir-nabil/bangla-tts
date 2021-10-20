@@ -1,4 +1,4 @@
-# bangla text to speech
+# Byakto TTS [bangla text to speech]
 Multilingual (Bangla, English) real-time ([almost] in a GPU) speech synthesis library
 
 ### Installation
