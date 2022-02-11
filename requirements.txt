@@ -18,7 +18,7 @@ llvmlite==0.30.0
 Markdown==3.1.1
 numba==0.46.0
 numpy==1.18.0
-protobuf==3.11.2
+protobuf==3.15.0
 pycparser==2.19
 requests==2.22.0
 resampy==0.2.2
