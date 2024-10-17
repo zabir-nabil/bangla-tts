@@ -1,5 +1,5 @@
 # Byakto TTS [bangla text to speech]
-Multilingual (Bangla, English) real-time ([almost] in a GPU) speech synthesis library
+Multilingual (Bangla, English) real-time speech synthesis library.
 
 ### Installation
 
@@ -46,13 +46,10 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 [Sample 1 (আমার সোনার বাংলা আমি তোমাকে ভালোবাসি)](static/0_56258.wav)
 
 
-[Sample 2 (আমার নাম জাবির আল নাজি নাবিল)](static/1_283811.wav)
+[Sample 2 (I am still not a great speaker)](static/2_235924.wav)
 
 
-[Sample 3 (I am still not a great speaker)](static/2_235924.wav)
-
-
-[Sample 4 (This is just a test)](static/3_256189.wav)
+[Sample 3 (This is just a test)](static/3_256189.wav)
 
 ### Update (18th April)
 
@@ -63,7 +60,7 @@ print(f"samplign rate: {gen_wavs[0][1]}")
 
  Example: *১৯৯৭ সালের ২১ জানুয়ারী তে আমার জন্ম হয়* will be converted to *['ঊনিশশ সাতানব্বই সালের একুশ জানুয়ারী তে আমার জন্ম হয় ']* by the parser.
 
- * Added a simple batch mechanism for translating longer sentences. As the attention window was fixed during training, the model previously failed to generate long sentences (n_characters > 200). So, added a simple segmenting scheme to break the sentences into multiple parts, synthesize in batch, and finally merge them into a single audio file.
+ * Added a simple batch mechanism for translating longer sentences. As the attention window was fixed during training, the model previously failed to generate long sentences (n_characters > 200). So, added a simple segmenting step to break the sentences into multiple parts, synthesize in batch, and finally merge them into a single audio file.
 
 
  **New examples:**
@@ -98,10 +95,4 @@ I have designed a test dataset to compare new bangla TTS models with the benchma
 - [ ] Publish the restful API
 - [ ] Publish the flask app
 
-### Other TTS projects
-
- * https://github.com/zabir-nabil/bangla-tts-hts
-
-
-### If this repository helps you in anyway, show your love :heart: by putting a :star: on this project :v:
 
