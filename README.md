@@ -7,8 +7,8 @@ Multilingual (Bangla, English) real-time speech synthesis library.
  * `conda create -n new_virtual_env python==3.6.8`
  * `conda activate new_virtual_env`
  * `pip install -r requirements.txt`
- * While running for the first time, keep your internet connection on to download the weights of the speech synthesis models (>500 MB)
- * For fast inference, you must install tensorflow-gpu and have a Nvidia GPU (CUDA).
+ * While running for the first time, keep your internet connection on to download the weights of the speech synthesis models (> 500 MB)
+ * For fast inference, you must install tensorflow-gpu and have an NVIDIA GPU (CUDA).
 
 ### Usage
 
